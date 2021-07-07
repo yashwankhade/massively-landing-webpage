@@ -5,11 +5,35 @@
     text-decoration: none;
     color:black;
 }
-body{
-    background-color: rgb(221, 218, 218);
-    font-family: Merriweather, Georgia, serif;
-    background: url(./assets/images/bg.jpg);
+@font-face {
+    font-family: "Source Sans Pro", "Merriweather";
+    src: url(./assets/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdu3cOWxw.woff2);
+    src: url(./assets/fonts/fa-brands-400.woff2);
+    src: url(./assets/fonts/fa-solid-900.woff2);
+    src: url(./assets/fonts/u-4l0qyriQwlOrhSvowK_l5-eR7lXff4jvzDP3WG.woff2);
+    src: url(./assets/fonts/u-4n0qyriQwlOrhSvowK_l521wRZWMf6hPvhPQ.woff2);
+
 }
+@font-face {
+    font-family: "Merriweather";
+    src: url(./assets/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdu3cOWxw.woff2);
+    src: url(./assets/fonts/fa-brands-400.woff2);
+    src: url(./assets/fonts/fa-solid-900.woff2);
+    src: url(./assets/fonts/u-4l0qyriQwlOrhSvowK_l5-eR7lXff4jvzDP3WG.woff2);
+    src: url(./assets/fonts/u-4n0qyriQwlOrhSvowK_l521wRZWMf6hPvhPQ.woff2);
+
+}
+body{
+    background-color: rgb(105, 103, 103);
+    font-size: 16px;
+    line-height: 38px;
+    color:#212931;
+    font-family: "Merriweather", Georgia, serif;
+    /* background: url(./assets/images/bg.jpg); */
+}
+
+
+
 article{
     border:1px solid gray;
 }
@@ -21,7 +45,9 @@ article{
     justify-content: space-around;
      
 }
-
+.fields{
+    padding: 20px;
+}
 li{
     list-style-type: none;
 }
@@ -32,6 +58,8 @@ label{
 
 .alt{
     /* border:1px solid gray; */
+    display: flex;
+    flex-direction: row;
     padding:40px;
 }
 
@@ -39,17 +67,35 @@ label{
     display: inline;
 }
 
+
 h1,h2{
     text-align: center;
 }
 
 h1{
+    font-size: 80px;
+    line-height: 80px;
+    font-family: Myfont, Helvetica, sans-serif;
+    color:#ffffff;
+}
+
+h2{
+    line-height: 70.4px;
+    font-size: 64px;
+    color:#212931;
+}
+
+h3{
     font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 12.8px;
+    line-height: 19.2px;
+    color: #717981;
+
 }
 
 #main{
-    background-color: white;
-    margin:75px;
+    background-color: #ffffff;
+    margin:75px 75px 75px 75px;
 }
 
 
@@ -93,11 +139,21 @@ span>.date{
 }
 
 .links{
+    /* margin:30px 20px; */
+    /* padding: 30px; */
+    color:#ffffff;
     display: flex;
 }
 
 .icons{
-    /* display: flex; */
-    /* justify-content: flex-end; */
+    display: flex; 
+    justify-content: flex-end;
 }
 
+#nav{
+    background-color: #212931;
+}
+
+ .active{
+    background-color: #ffffff;
+}
